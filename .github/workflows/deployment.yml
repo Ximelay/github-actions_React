@@ -36,3 +36,6 @@ jobs:
 
       - name: Build App
         run: npm run build
+
+      - name: Deploy 
+        run: echo Deploing...
