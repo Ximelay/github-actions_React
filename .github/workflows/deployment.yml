@@ -6,10 +6,8 @@ jobs:
     steps:
       - name: Get the repository code
         uses: actions/checkout@v4
-
       - name: Install dependecies
         run: npm ci
-
       - name: Test App
         run: npm run test
   
@@ -18,10 +16,8 @@ jobs:
     steps:
       - name: Get the repository code
         uses: actions/checkout@v4
-
       - name: Install dependecies
         run: npm ci
-
       - name: Lint App
         run: npm run lint
   
@@ -30,12 +26,9 @@ jobs:
     steps:
       - name: Get the repository code
         uses: actions/checkout@v4
-
       - name: Install dependecies
         run: npm ci
-
       - name: Build App
         run: npm run build
-
       - name: Deploy 
         run: echo Deploing...
