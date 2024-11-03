@@ -10,6 +10,9 @@ jobs:
         run: npm ci
       - name: Test App
         run: npm run test
+      - name: Clear npm cache
+        run: npm cache clean --force
+
   
   lint:
     runs-on: ubuntu-latest
@@ -20,6 +23,8 @@ jobs:
         run: npm ci
       - name: Lint App
         run: npm run lint
+      - name: Clear npm cache
+        run: npm cache clean --force
   
   build:
     runs-on: ubuntu-latest
@@ -32,3 +37,5 @@ jobs:
         run: npm run build
       - name: Deploy
         run: echo Deploying...
+      - name: Clear npm cache
+        run: npm cache clean --force
